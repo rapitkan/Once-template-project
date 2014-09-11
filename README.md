@@ -11,5 +11,9 @@ Pre-conditions: [NodeJS](http://nodejs.org/download/), [Bower](http://bower.io/)
 4. Navigate into the directory of the template project.
 5. Run command `git submodule update --init --recursive`
 6. Navigate to k-bag directory.
-7. Run command `npm install
+7. Run command `npm install`
 8. Run command `bower install`
+9. Run command `npm start`
+10. Open a valid web browser or Internet Explorer and navigate to http://localhost:35000.
+
+After the steps above you should have this template project running and everything is ready for serious or less serious development work. Have fun!
