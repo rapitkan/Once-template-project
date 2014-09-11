@@ -1,0 +1,11 @@
+@each $name, $value in $breakpoints {
+  @media (min-width: $value) {
+    body:after {
+      content: 'mq-' + $name;
+      display: block;
+      line-height: 0;
+      font-size: 0;
+      height: 0;
+    }
+  }
+};

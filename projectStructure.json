@@ -1,0 +1,9 @@
+{
+	"devFolder": "../app",
+	"distFolder": "../dist",
+  "port": 35000,
+  "copy": [{
+    "src": "/images/*.*",
+    "base": "/images/"
+  }]
+}

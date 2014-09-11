@@ -1,0 +1,54 @@
+// Once
+
+$spacerSizes: (xs: 0.5em, sm: 0.7em, md: 1em, lg: 1.5em, xl: 2em);
+$borderSizes: (xs: 1px, sm: 2px, md: 3px, lg: 4px, xl: 5px);
+
+$dirs: (
+    t: (top),
+    r: (right),
+    e: (right),
+    b: (bottom),
+    l: (left),
+    s: (left),
+    x: (left, right),
+    y: (top, bottom),
+    box: (top, right, bottom, left)
+);
+
+$breakpoints: (xs: 320px, sm: 480px, md: 960px, lg: 1024px, xl: 1200px);
+$gridColumnCount: 12;
+
+$fontSizes: (
+    giga    : 22px,
+    mega    : 20px,
+    alpha   : 18px,
+    beta    : 16px,
+    gamma   : 14px,
+    delta   : 12px,
+    epsilon : 10px,
+    zeta    : 8px
+);
+
+$borders: ();
+
+$colors: (
+    a: #fff,
+    b: #000,
+    c: #ba25ba,
+    d: #ddd,
+    e: #646665,
+    f: #5ec155,
+    g: #f7f076
+);
+
+// f: #7ac174,
+
+$borderWidths: (
+    a: "1px",
+    b: "2px",
+    c: "3px",
+    d: "5px",
+    e: "8px"
+);
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts" !default;

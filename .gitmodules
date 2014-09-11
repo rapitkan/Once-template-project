@@ -1,0 +1,3 @@
+[submodule "k-bag"]
+	path = k-bag
+	url = https://github.com/rapitkan/k-bag.git

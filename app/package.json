@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "Example application",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp dev"
+  },
+  "author": "Raimo Pitkänen",
+  "license": "ISC"
+}

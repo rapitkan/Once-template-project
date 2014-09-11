@@ -1,0 +1,14 @@
+doctype html
+html(lang="en",ng-app="exampleapp")
+  head
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
+    meta(charset="ISO-8859-1")
+    title="Example application"
+    link(rel="stylesheet",type="text/css",href="index.css")
+  //- layoutController allows the use of breakpoint variables in JavaScript.
+  //- It uses the $breakpoints mapping by Once css library (k-bag/once/src/sass/atoms/_breakpoints.scss)
+  //- For example, you can hide things by writing ng-hide="xl" or use breakpoint
+  //- names like this ng-if="xs || sm".
+  body(ng-controller="layoutController")
+    ng-view
+    script(src="bundle.js")
