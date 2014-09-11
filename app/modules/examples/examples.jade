@@ -1,2 +1,31 @@
 ng-include(src="'./modules/header/header.html'")
+.Bbox-aab.Pbox-md
   h2 Congratulations! The template project is running and only the width of your screen is the limit ;)
+  p Tip: Try to change the width of the browser window.
+.Bbox-caf.relative.Pbox-md
+  p(ng-show="xs") This is only seen via extra small screen.
+  p(ng-show="sm") This is only seen via small screen.
+  p(ng-show="md") This is only seen via medium screen.
+  p(ng-show="lg") This is only seen via large screen.
+  p(ng-show="xl") This is only seen via extra large screen.
+.Pbox-md
+  h3 Breakpoints
+  p You can set classes by breakpoints like 
+    span(ng-class="{'f-delta': sm, 'f-giga': md}") this:
+  pre ng-class="{'f-delta': sm, 'f-giga': md}"
+
+  h3 Grid
+  p There are twelve columns to use.
+  .row
+    .xs-12.sm-6.md-4.lg-4.xl-3
+      p This 
+    .xs-12.sm-6.md-4.lg-4.xl-3
+      p is a
+    .xs-12.sm-6.md-4.lg-4.xl-3
+      p grid
+    .xs-12.sm-6.md-4.lg-4.xl-3
+      p example.
+
+  fieldset.Bt-bac
+    legend Finally
+    p.f-italic.f-center Now you know few basic things about this template project. Feel free to explore it.
