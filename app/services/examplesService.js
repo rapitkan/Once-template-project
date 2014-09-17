@@ -1,9 +1,9 @@
 module.exports = ['$rootScope', function ($rootScope, $location) {
 
-  var RecipesService = {
+  var ExamplesService = {
     // Write here the API of your service.
   };
 
-  return RecipesService;
+  return ExamplesService;
 
 }];

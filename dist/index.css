@@ -1,0 +1,7184 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+@media (min-width: 320px) {
+  body:after {
+    content: "mq-xs";
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    height: 0; } }
+@media (min-width: 640px) {
+  body:after {
+    content: "mq-sm";
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    height: 0; } }
+@media (min-width: 1024px) {
+  body:after {
+    content: "mq-md";
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    height: 0; } }
+@media (min-width: 1200px) {
+  body:after {
+    content: "mq-lg";
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    height: 0; } }
+/*
+# Strip units from a number with units.
+
+```scss
+$number: strip-units(3px);
+```
+
+Output:
+
+```scss
+$number => 3
+```
+
+ */
+/*
+# Replace a string with another string
+
+```scss
+$output: str-replace('something here {might} change', '{might}', 'will');
+$output => 'something here will change'
+```
+
+Output:
+
+```scss
+$output => 'something here will change'
+```
+
+ */
+/*
+# CSS class generator with a specific name and properties
+
+```scss
+@include createSelector('Px-xs', ('padding-left': 1em, 'padding-right': 1em));
+```
+
+Output:
+
+```scss
+.Px-xs {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+```
+
+ */
+/*
+# Generate multiple selectors (TBD)
+
+```scss
+$output: generateMultipleSelectors('Px', (xs, sm, md));
+```
+
+Output
+
+```scss
+$output => (xs: 'Px-xs', sm: 'Px-sm', md: 'Px-md');
+```
+ */
+/*
+# Create multiple sized classes
+
+```scss
+@include createMultipleSizeClasses('Px', (sm: 1em, md: 2em), ('padding-left', 'padding-right'));
+```
+
+Output:
+
+```scss
+.Px-sm {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.Px-md {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+```
+
+ */
+/*
+# Create multiple sized box classes 
+
+Create CSS classes (multiple sizes) of elements that have top, right, bottom & left values
+
+```scss
+@include createMultipleSizeBoxClasses('P{dirKey}', (xs: 1em, sm: 2em), 'padding-{dir}');
+```
+
+Will generate for example following classes
+
+```scss
+.Pt-xs {
+    padding-top: 1em;
+}
+
+.Pt-sm {
+    padding-top: 2em;
+}
+
+.Py-xs {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+...
+```
+ */
+/*
+# Create multiple box classes
+
+```scss
+@include createMultipleBoxClasses('B{dirKey}-solid', ('border-{dir}-style': 'solid'));
+```
+
+Will generate for example following classes:
+
+```scss
+.Br-solid {
+    border-right-style: solid;
+}
+
+.Bx-solid {
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+...
+```
+
+ */
+* {
+  box-sizing: border-box; }
+
+/*
+# Grid
+
+Good defaults, widely customizable.
+*/
+@media (min-width: 320px) {
+  .xs-1 {
+    width: 26.66667px; }
+
+  .xs-2 {
+    width: 53.33333px; }
+
+  .xs-3 {
+    width: 80px; }
+
+  .xs-4 {
+    width: 106.66667px; }
+
+  .xs-5 {
+    width: 133.33333px; }
+
+  .xs-6 {
+    width: 160px; }
+
+  .xs-7 {
+    width: 186.66667px; }
+
+  .xs-8 {
+    width: 213.33333px; }
+
+  .xs-9 {
+    width: 240px; }
+
+  .xs-10 {
+    width: 266.66667px; }
+
+  .xs-11 {
+    width: 293.33333px; }
+
+  .xs-12 {
+    width: 320px; } }
+@media (min-width: 640px) {
+  .sm-1 {
+    width: 53.33333px; }
+
+  .sm-2 {
+    width: 106.66667px; }
+
+  .sm-3 {
+    width: 160px; }
+
+  .sm-4 {
+    width: 213.33333px; }
+
+  .sm-5 {
+    width: 266.66667px; }
+
+  .sm-6 {
+    width: 320px; }
+
+  .sm-7 {
+    width: 373.33333px; }
+
+  .sm-8 {
+    width: 426.66667px; }
+
+  .sm-9 {
+    width: 480px; }
+
+  .sm-10 {
+    width: 533.33333px; }
+
+  .sm-11 {
+    width: 586.66667px; }
+
+  .sm-12 {
+    width: 640px; } }
+@media (min-width: 1024px) {
+  .md-1 {
+    width: 85.33333px; }
+
+  .md-2 {
+    width: 170.66667px; }
+
+  .md-3 {
+    width: 256px; }
+
+  .md-4 {
+    width: 341.33333px; }
+
+  .md-5 {
+    width: 426.66667px; }
+
+  .md-6 {
+    width: 512px; }
+
+  .md-7 {
+    width: 597.33333px; }
+
+  .md-8 {
+    width: 682.66667px; }
+
+  .md-9 {
+    width: 768px; }
+
+  .md-10 {
+    width: 853.33333px; }
+
+  .md-11 {
+    width: 938.66667px; }
+
+  .md-12 {
+    width: 1024px; } }
+@media (min-width: 1200px) {
+  .lg-1 {
+    width: 100px; }
+
+  .lg-2 {
+    width: 200px; }
+
+  .lg-3 {
+    width: 300px; }
+
+  .lg-4 {
+    width: 400px; }
+
+  .lg-5 {
+    width: 500px; }
+
+  .lg-6 {
+    width: 600px; }
+
+  .lg-7 {
+    width: 700px; }
+
+  .lg-8 {
+    width: 800px; }
+
+  .lg-9 {
+    width: 900px; }
+
+  .lg-10 {
+    width: 1000px; }
+
+  .lg-11 {
+    width: 1100px; }
+
+  .lg-12 {
+    width: 1200px; } }
+@media (min-width: 320px) {
+  .xs-1 {
+    width: 8.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-2 {
+    width: 16.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-4 {
+    width: 33.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-5 {
+    width: 41.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-6 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-7 {
+    width: 58.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-8 {
+    width: 66.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-9 {
+    width: 75%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-10 {
+    width: 83.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-11 {
+    width: 91.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .xs-12 {
+    width: 100%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+@media (min-width: 640px) {
+  .sm-1 {
+    width: 8.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-2 {
+    width: 16.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-4 {
+    width: 33.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-5 {
+    width: 41.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-6 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-7 {
+    width: 58.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-8 {
+    width: 66.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-9 {
+    width: 75%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-10 {
+    width: 83.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-11 {
+    width: 91.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .sm-12 {
+    width: 100%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+@media (min-width: 1024px) {
+  .md-1 {
+    width: 8.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-2 {
+    width: 16.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-4 {
+    width: 33.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-5 {
+    width: 41.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-6 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-7 {
+    width: 58.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-8 {
+    width: 66.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-9 {
+    width: 75%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-10 {
+    width: 83.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-11 {
+    width: 91.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .md-12 {
+    width: 100%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+@media (min-width: 1200px) {
+  .lg-1 {
+    width: 8.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-2 {
+    width: 16.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-4 {
+    width: 33.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-5 {
+    width: 41.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-6 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-7 {
+    width: 58.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-8 {
+    width: 66.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-9 {
+    width: 75%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-10 {
+    width: 83.33333%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-11 {
+    width: 91.66667%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .lg-12 {
+    width: 100%;
+    float: left;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+.row {
+  float: left;
+  clear: both;
+  width: 100%; }
+
+/* 
+    Creates borders using mappings for border widths, border styles and colors.
+    You can define the mappings in the style sheets of your project.
+*/
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aaa {
+  border-top: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aaa {
+  border-right: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aaa {
+  border-right: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aaa {
+  border-bottom: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aaa {
+  border-left: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aaa {
+  border-left: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aaa {
+  border-left: 1px solid white;
+  border-right: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aaa {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aaa {
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aab {
+  border-top: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aab {
+  border-right: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aab {
+  border-right: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aab {
+  border-bottom: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aab {
+  border-left: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aab {
+  border-left: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aab {
+  border-left: 1px solid black;
+  border-right: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aab {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aab {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aac {
+  border-top: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aac {
+  border-right: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aac {
+  border-right: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aac {
+  border-bottom: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aac {
+  border-left: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aac {
+  border-left: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aac {
+  border-left: 1px solid #ba25ba;
+  border-right: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aac {
+  border-top: 1px solid #ba25ba;
+  border-bottom: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aac {
+  border-top: 1px solid #ba25ba;
+  border-right: 1px solid #ba25ba;
+  border-bottom: 1px solid #ba25ba;
+  border-left: 1px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aad {
+  border-top: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aad {
+  border-right: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aad {
+  border-right: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aad {
+  border-bottom: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aad {
+  border-left: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aad {
+  border-left: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aad {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aad {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aad {
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aae {
+  border-top: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aae {
+  border-right: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aae {
+  border-right: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aae {
+  border-bottom: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aae {
+  border-left: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aae {
+  border-left: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aae {
+  border-left: 1px solid #646665;
+  border-right: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aae {
+  border-top: 1px solid #646665;
+  border-bottom: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aae {
+  border-top: 1px solid #646665;
+  border-right: 1px solid #646665;
+  border-bottom: 1px solid #646665;
+  border-left: 1px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aaf {
+  border-top: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aaf {
+  border-right: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aaf {
+  border-right: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aaf {
+  border-bottom: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aaf {
+  border-left: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aaf {
+  border-left: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aaf {
+  border-left: 1px solid #5ec155;
+  border-right: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aaf {
+  border-top: 1px solid #5ec155;
+  border-bottom: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aaf {
+  border-top: 1px solid #5ec155;
+  border-right: 1px solid #5ec155;
+  border-bottom: 1px solid #5ec155;
+  border-left: 1px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aag {
+  border-top: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aag {
+  border-right: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aag {
+  border-right: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aag {
+  border-bottom: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aag {
+  border-left: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aag {
+  border-left: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aag {
+  border-left: 1px solid #f7f076;
+  border-right: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aag {
+  border-top: 1px solid #f7f076;
+  border-bottom: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aag {
+  border-top: 1px solid #f7f076;
+  border-right: 1px solid #f7f076;
+  border-bottom: 1px solid #f7f076;
+  border-left: 1px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aba {
+  border-top: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aba {
+  border-right: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aba {
+  border-right: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aba {
+  border-bottom: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aba {
+  border-left: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aba {
+  border-left: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aba {
+  border-left: 1px dashed white;
+  border-right: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aba {
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aba {
+  border-top: 1px dashed white;
+  border-right: 1px dashed white;
+  border-bottom: 1px dashed white;
+  border-left: 1px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-abb {
+  border-top: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-abb {
+  border-right: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-abb {
+  border-right: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-abb {
+  border-bottom: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-abb {
+  border-left: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-abb {
+  border-left: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-abb {
+  border-left: 1px dashed black;
+  border-right: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-abb {
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-abb {
+  border-top: 1px dashed black;
+  border-right: 1px dashed black;
+  border-bottom: 1px dashed black;
+  border-left: 1px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-abc {
+  border-top: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-abc {
+  border-right: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-abc {
+  border-right: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-abc {
+  border-bottom: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-abc {
+  border-left: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-abc {
+  border-left: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-abc {
+  border-left: 1px dashed #ba25ba;
+  border-right: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-abc {
+  border-top: 1px dashed #ba25ba;
+  border-bottom: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-abc {
+  border-top: 1px dashed #ba25ba;
+  border-right: 1px dashed #ba25ba;
+  border-bottom: 1px dashed #ba25ba;
+  border-left: 1px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-abd {
+  border-top: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-abd {
+  border-right: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-abd {
+  border-right: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-abd {
+  border-bottom: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-abd {
+  border-left: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-abd {
+  border-left: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-abd {
+  border-left: 1px dashed #dddddd;
+  border-right: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-abd {
+  border-top: 1px dashed #dddddd;
+  border-bottom: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-abd {
+  border-top: 1px dashed #dddddd;
+  border-right: 1px dashed #dddddd;
+  border-bottom: 1px dashed #dddddd;
+  border-left: 1px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-abe {
+  border-top: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-abe {
+  border-right: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-abe {
+  border-right: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-abe {
+  border-bottom: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-abe {
+  border-left: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-abe {
+  border-left: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-abe {
+  border-left: 1px dashed #646665;
+  border-right: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-abe {
+  border-top: 1px dashed #646665;
+  border-bottom: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-abe {
+  border-top: 1px dashed #646665;
+  border-right: 1px dashed #646665;
+  border-bottom: 1px dashed #646665;
+  border-left: 1px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-abf {
+  border-top: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-abf {
+  border-right: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-abf {
+  border-right: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-abf {
+  border-bottom: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-abf {
+  border-left: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-abf {
+  border-left: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-abf {
+  border-left: 1px dashed #5ec155;
+  border-right: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-abf {
+  border-top: 1px dashed #5ec155;
+  border-bottom: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-abf {
+  border-top: 1px dashed #5ec155;
+  border-right: 1px dashed #5ec155;
+  border-bottom: 1px dashed #5ec155;
+  border-left: 1px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-abg {
+  border-top: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-abg {
+  border-right: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-abg {
+  border-right: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-abg {
+  border-bottom: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-abg {
+  border-left: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-abg {
+  border-left: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-abg {
+  border-left: 1px dashed #f7f076;
+  border-right: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-abg {
+  border-top: 1px dashed #f7f076;
+  border-bottom: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-abg {
+  border-top: 1px dashed #f7f076;
+  border-right: 1px dashed #f7f076;
+  border-bottom: 1px dashed #f7f076;
+  border-left: 1px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-aca {
+  border-top: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-aca {
+  border-right: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-aca {
+  border-right: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-aca {
+  border-bottom: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-aca {
+  border-left: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-aca {
+  border-left: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-aca {
+  border-left: 1px dotted white;
+  border-right: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-aca {
+  border-top: 1px dotted white;
+  border-bottom: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-aca {
+  border-top: 1px dotted white;
+  border-right: 1px dotted white;
+  border-bottom: 1px dotted white;
+  border-left: 1px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-acb {
+  border-top: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-acb {
+  border-right: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-acb {
+  border-right: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-acb {
+  border-bottom: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-acb {
+  border-left: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-acb {
+  border-left: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-acb {
+  border-left: 1px dotted black;
+  border-right: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-acb {
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-acb {
+  border-top: 1px dotted black;
+  border-right: 1px dotted black;
+  border-bottom: 1px dotted black;
+  border-left: 1px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-acc {
+  border-top: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-acc {
+  border-right: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-acc {
+  border-right: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-acc {
+  border-bottom: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-acc {
+  border-left: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-acc {
+  border-left: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-acc {
+  border-left: 1px dotted #ba25ba;
+  border-right: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-acc {
+  border-top: 1px dotted #ba25ba;
+  border-bottom: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-acc {
+  border-top: 1px dotted #ba25ba;
+  border-right: 1px dotted #ba25ba;
+  border-bottom: 1px dotted #ba25ba;
+  border-left: 1px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-acd {
+  border-top: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-acd {
+  border-right: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-acd {
+  border-right: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-acd {
+  border-bottom: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-acd {
+  border-left: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-acd {
+  border-left: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-acd {
+  border-left: 1px dotted #dddddd;
+  border-right: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-acd {
+  border-top: 1px dotted #dddddd;
+  border-bottom: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-acd {
+  border-top: 1px dotted #dddddd;
+  border-right: 1px dotted #dddddd;
+  border-bottom: 1px dotted #dddddd;
+  border-left: 1px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ace {
+  border-top: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ace {
+  border-right: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ace {
+  border-right: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ace {
+  border-bottom: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ace {
+  border-left: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ace {
+  border-left: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ace {
+  border-left: 1px dotted #646665;
+  border-right: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ace {
+  border-top: 1px dotted #646665;
+  border-bottom: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ace {
+  border-top: 1px dotted #646665;
+  border-right: 1px dotted #646665;
+  border-bottom: 1px dotted #646665;
+  border-left: 1px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-acf {
+  border-top: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-acf {
+  border-right: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-acf {
+  border-right: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-acf {
+  border-bottom: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-acf {
+  border-left: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-acf {
+  border-left: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-acf {
+  border-left: 1px dotted #5ec155;
+  border-right: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-acf {
+  border-top: 1px dotted #5ec155;
+  border-bottom: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-acf {
+  border-top: 1px dotted #5ec155;
+  border-right: 1px dotted #5ec155;
+  border-bottom: 1px dotted #5ec155;
+  border-left: 1px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-acg {
+  border-top: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-acg {
+  border-right: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-acg {
+  border-right: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-acg {
+  border-bottom: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-acg {
+  border-left: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-acg {
+  border-left: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-acg {
+  border-left: 1px dotted #f7f076;
+  border-right: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-acg {
+  border-top: 1px dotted #f7f076;
+  border-bottom: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-acg {
+  border-top: 1px dotted #f7f076;
+  border-right: 1px dotted #f7f076;
+  border-bottom: 1px dotted #f7f076;
+  border-left: 1px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-baa {
+  border-top: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-baa {
+  border-right: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-baa {
+  border-right: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-baa {
+  border-bottom: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-baa {
+  border-left: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-baa {
+  border-left: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-baa {
+  border-left: 2px solid white;
+  border-right: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-baa {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-baa {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bab {
+  border-top: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bab {
+  border-right: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bab {
+  border-right: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bab {
+  border-bottom: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bab {
+  border-left: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bab {
+  border-left: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bab {
+  border-left: 2px solid black;
+  border-right: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bab {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bab {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bac {
+  border-top: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bac {
+  border-right: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bac {
+  border-right: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bac {
+  border-bottom: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bac {
+  border-left: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bac {
+  border-left: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bac {
+  border-left: 2px solid #ba25ba;
+  border-right: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bac {
+  border-top: 2px solid #ba25ba;
+  border-bottom: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bac {
+  border-top: 2px solid #ba25ba;
+  border-right: 2px solid #ba25ba;
+  border-bottom: 2px solid #ba25ba;
+  border-left: 2px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bad {
+  border-top: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bad {
+  border-right: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bad {
+  border-right: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bad {
+  border-bottom: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bad {
+  border-left: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bad {
+  border-left: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bad {
+  border-left: 2px solid #dddddd;
+  border-right: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bad {
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bad {
+  border-top: 2px solid #dddddd;
+  border-right: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  border-left: 2px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bae {
+  border-top: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bae {
+  border-right: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bae {
+  border-right: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bae {
+  border-bottom: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bae {
+  border-left: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bae {
+  border-left: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bae {
+  border-left: 2px solid #646665;
+  border-right: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bae {
+  border-top: 2px solid #646665;
+  border-bottom: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bae {
+  border-top: 2px solid #646665;
+  border-right: 2px solid #646665;
+  border-bottom: 2px solid #646665;
+  border-left: 2px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-baf {
+  border-top: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-baf {
+  border-right: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-baf {
+  border-right: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-baf {
+  border-bottom: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-baf {
+  border-left: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-baf {
+  border-left: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-baf {
+  border-left: 2px solid #5ec155;
+  border-right: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-baf {
+  border-top: 2px solid #5ec155;
+  border-bottom: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-baf {
+  border-top: 2px solid #5ec155;
+  border-right: 2px solid #5ec155;
+  border-bottom: 2px solid #5ec155;
+  border-left: 2px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bag {
+  border-top: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bag {
+  border-right: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bag {
+  border-right: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bag {
+  border-bottom: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bag {
+  border-left: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bag {
+  border-left: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bag {
+  border-left: 2px solid #f7f076;
+  border-right: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bag {
+  border-top: 2px solid #f7f076;
+  border-bottom: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bag {
+  border-top: 2px solid #f7f076;
+  border-right: 2px solid #f7f076;
+  border-bottom: 2px solid #f7f076;
+  border-left: 2px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bba {
+  border-top: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bba {
+  border-right: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bba {
+  border-right: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bba {
+  border-bottom: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bba {
+  border-left: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bba {
+  border-left: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bba {
+  border-left: 2px dashed white;
+  border-right: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bba {
+  border-top: 2px dashed white;
+  border-bottom: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bba {
+  border-top: 2px dashed white;
+  border-right: 2px dashed white;
+  border-bottom: 2px dashed white;
+  border-left: 2px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bbb {
+  border-top: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bbb {
+  border-right: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bbb {
+  border-right: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bbb {
+  border-bottom: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bbb {
+  border-left: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bbb {
+  border-left: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bbb {
+  border-left: 2px dashed black;
+  border-right: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bbb {
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bbb {
+  border-top: 2px dashed black;
+  border-right: 2px dashed black;
+  border-bottom: 2px dashed black;
+  border-left: 2px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bbc {
+  border-top: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bbc {
+  border-right: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bbc {
+  border-right: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bbc {
+  border-bottom: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bbc {
+  border-left: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bbc {
+  border-left: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bbc {
+  border-left: 2px dashed #ba25ba;
+  border-right: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bbc {
+  border-top: 2px dashed #ba25ba;
+  border-bottom: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bbc {
+  border-top: 2px dashed #ba25ba;
+  border-right: 2px dashed #ba25ba;
+  border-bottom: 2px dashed #ba25ba;
+  border-left: 2px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bbd {
+  border-top: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bbd {
+  border-right: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bbd {
+  border-right: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bbd {
+  border-bottom: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bbd {
+  border-left: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bbd {
+  border-left: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bbd {
+  border-left: 2px dashed #dddddd;
+  border-right: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bbd {
+  border-top: 2px dashed #dddddd;
+  border-bottom: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bbd {
+  border-top: 2px dashed #dddddd;
+  border-right: 2px dashed #dddddd;
+  border-bottom: 2px dashed #dddddd;
+  border-left: 2px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bbe {
+  border-top: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bbe {
+  border-right: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bbe {
+  border-right: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bbe {
+  border-bottom: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bbe {
+  border-left: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bbe {
+  border-left: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bbe {
+  border-left: 2px dashed #646665;
+  border-right: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bbe {
+  border-top: 2px dashed #646665;
+  border-bottom: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bbe {
+  border-top: 2px dashed #646665;
+  border-right: 2px dashed #646665;
+  border-bottom: 2px dashed #646665;
+  border-left: 2px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bbf {
+  border-top: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bbf {
+  border-right: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bbf {
+  border-right: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bbf {
+  border-bottom: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bbf {
+  border-left: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bbf {
+  border-left: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bbf {
+  border-left: 2px dashed #5ec155;
+  border-right: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bbf {
+  border-top: 2px dashed #5ec155;
+  border-bottom: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bbf {
+  border-top: 2px dashed #5ec155;
+  border-right: 2px dashed #5ec155;
+  border-bottom: 2px dashed #5ec155;
+  border-left: 2px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bbg {
+  border-top: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bbg {
+  border-right: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bbg {
+  border-right: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bbg {
+  border-bottom: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bbg {
+  border-left: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bbg {
+  border-left: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bbg {
+  border-left: 2px dashed #f7f076;
+  border-right: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bbg {
+  border-top: 2px dashed #f7f076;
+  border-bottom: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bbg {
+  border-top: 2px dashed #f7f076;
+  border-right: 2px dashed #f7f076;
+  border-bottom: 2px dashed #f7f076;
+  border-left: 2px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bca {
+  border-top: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bca {
+  border-right: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bca {
+  border-right: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bca {
+  border-bottom: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bca {
+  border-left: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bca {
+  border-left: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bca {
+  border-left: 2px dotted white;
+  border-right: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bca {
+  border-top: 2px dotted white;
+  border-bottom: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bca {
+  border-top: 2px dotted white;
+  border-right: 2px dotted white;
+  border-bottom: 2px dotted white;
+  border-left: 2px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bcb {
+  border-top: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bcb {
+  border-right: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bcb {
+  border-right: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bcb {
+  border-bottom: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bcb {
+  border-left: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bcb {
+  border-left: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bcb {
+  border-left: 2px dotted black;
+  border-right: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bcb {
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bcb {
+  border-top: 2px dotted black;
+  border-right: 2px dotted black;
+  border-bottom: 2px dotted black;
+  border-left: 2px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bcc {
+  border-top: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bcc {
+  border-right: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bcc {
+  border-right: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bcc {
+  border-bottom: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bcc {
+  border-left: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bcc {
+  border-left: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bcc {
+  border-left: 2px dotted #ba25ba;
+  border-right: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bcc {
+  border-top: 2px dotted #ba25ba;
+  border-bottom: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bcc {
+  border-top: 2px dotted #ba25ba;
+  border-right: 2px dotted #ba25ba;
+  border-bottom: 2px dotted #ba25ba;
+  border-left: 2px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bcd {
+  border-top: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bcd {
+  border-right: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bcd {
+  border-right: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bcd {
+  border-bottom: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bcd {
+  border-left: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bcd {
+  border-left: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bcd {
+  border-left: 2px dotted #dddddd;
+  border-right: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bcd {
+  border-top: 2px dotted #dddddd;
+  border-bottom: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bcd {
+  border-top: 2px dotted #dddddd;
+  border-right: 2px dotted #dddddd;
+  border-bottom: 2px dotted #dddddd;
+  border-left: 2px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bce {
+  border-top: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bce {
+  border-right: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bce {
+  border-right: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bce {
+  border-bottom: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bce {
+  border-left: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bce {
+  border-left: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bce {
+  border-left: 2px dotted #646665;
+  border-right: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bce {
+  border-top: 2px dotted #646665;
+  border-bottom: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bce {
+  border-top: 2px dotted #646665;
+  border-right: 2px dotted #646665;
+  border-bottom: 2px dotted #646665;
+  border-left: 2px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bcf {
+  border-top: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bcf {
+  border-right: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bcf {
+  border-right: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bcf {
+  border-bottom: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bcf {
+  border-left: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bcf {
+  border-left: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bcf {
+  border-left: 2px dotted #5ec155;
+  border-right: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bcf {
+  border-top: 2px dotted #5ec155;
+  border-bottom: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bcf {
+  border-top: 2px dotted #5ec155;
+  border-right: 2px dotted #5ec155;
+  border-bottom: 2px dotted #5ec155;
+  border-left: 2px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-bcg {
+  border-top: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-bcg {
+  border-right: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-bcg {
+  border-right: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-bcg {
+  border-bottom: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-bcg {
+  border-left: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-bcg {
+  border-left: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-bcg {
+  border-left: 2px dotted #f7f076;
+  border-right: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-bcg {
+  border-top: 2px dotted #f7f076;
+  border-bottom: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-bcg {
+  border-top: 2px dotted #f7f076;
+  border-right: 2px dotted #f7f076;
+  border-bottom: 2px dotted #f7f076;
+  border-left: 2px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-caa {
+  border-top: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-caa {
+  border-right: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-caa {
+  border-right: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-caa {
+  border-bottom: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-caa {
+  border-left: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-caa {
+  border-left: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-caa {
+  border-left: 3px solid white;
+  border-right: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-caa {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-caa {
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cab {
+  border-top: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cab {
+  border-right: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cab {
+  border-right: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cab {
+  border-bottom: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cab {
+  border-left: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cab {
+  border-left: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cab {
+  border-left: 3px solid black;
+  border-right: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cab {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cab {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cac {
+  border-top: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cac {
+  border-right: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cac {
+  border-right: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cac {
+  border-bottom: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cac {
+  border-left: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cac {
+  border-left: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cac {
+  border-left: 3px solid #ba25ba;
+  border-right: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cac {
+  border-top: 3px solid #ba25ba;
+  border-bottom: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cac {
+  border-top: 3px solid #ba25ba;
+  border-right: 3px solid #ba25ba;
+  border-bottom: 3px solid #ba25ba;
+  border-left: 3px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cad {
+  border-top: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cad {
+  border-right: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cad {
+  border-right: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cad {
+  border-bottom: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cad {
+  border-left: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cad {
+  border-left: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cad {
+  border-left: 3px solid #dddddd;
+  border-right: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cad {
+  border-top: 3px solid #dddddd;
+  border-bottom: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cad {
+  border-top: 3px solid #dddddd;
+  border-right: 3px solid #dddddd;
+  border-bottom: 3px solid #dddddd;
+  border-left: 3px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cae {
+  border-top: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cae {
+  border-right: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cae {
+  border-right: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cae {
+  border-bottom: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cae {
+  border-left: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cae {
+  border-left: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cae {
+  border-left: 3px solid #646665;
+  border-right: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cae {
+  border-top: 3px solid #646665;
+  border-bottom: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cae {
+  border-top: 3px solid #646665;
+  border-right: 3px solid #646665;
+  border-bottom: 3px solid #646665;
+  border-left: 3px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-caf {
+  border-top: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-caf {
+  border-right: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-caf {
+  border-right: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-caf {
+  border-bottom: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-caf {
+  border-left: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-caf {
+  border-left: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-caf {
+  border-left: 3px solid #5ec155;
+  border-right: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-caf {
+  border-top: 3px solid #5ec155;
+  border-bottom: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-caf {
+  border-top: 3px solid #5ec155;
+  border-right: 3px solid #5ec155;
+  border-bottom: 3px solid #5ec155;
+  border-left: 3px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cag {
+  border-top: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cag {
+  border-right: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cag {
+  border-right: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cag {
+  border-bottom: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cag {
+  border-left: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cag {
+  border-left: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cag {
+  border-left: 3px solid #f7f076;
+  border-right: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cag {
+  border-top: 3px solid #f7f076;
+  border-bottom: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cag {
+  border-top: 3px solid #f7f076;
+  border-right: 3px solid #f7f076;
+  border-bottom: 3px solid #f7f076;
+  border-left: 3px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cba {
+  border-top: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cba {
+  border-right: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cba {
+  border-right: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cba {
+  border-bottom: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cba {
+  border-left: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cba {
+  border-left: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cba {
+  border-left: 3px dashed white;
+  border-right: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cba {
+  border-top: 3px dashed white;
+  border-bottom: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cba {
+  border-top: 3px dashed white;
+  border-right: 3px dashed white;
+  border-bottom: 3px dashed white;
+  border-left: 3px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cbb {
+  border-top: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cbb {
+  border-right: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cbb {
+  border-right: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cbb {
+  border-bottom: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cbb {
+  border-left: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cbb {
+  border-left: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cbb {
+  border-left: 3px dashed black;
+  border-right: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cbb {
+  border-top: 3px dashed black;
+  border-bottom: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cbb {
+  border-top: 3px dashed black;
+  border-right: 3px dashed black;
+  border-bottom: 3px dashed black;
+  border-left: 3px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cbc {
+  border-top: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cbc {
+  border-right: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cbc {
+  border-right: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cbc {
+  border-bottom: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cbc {
+  border-left: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cbc {
+  border-left: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cbc {
+  border-left: 3px dashed #ba25ba;
+  border-right: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cbc {
+  border-top: 3px dashed #ba25ba;
+  border-bottom: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cbc {
+  border-top: 3px dashed #ba25ba;
+  border-right: 3px dashed #ba25ba;
+  border-bottom: 3px dashed #ba25ba;
+  border-left: 3px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cbd {
+  border-top: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cbd {
+  border-right: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cbd {
+  border-right: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cbd {
+  border-bottom: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cbd {
+  border-left: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cbd {
+  border-left: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cbd {
+  border-left: 3px dashed #dddddd;
+  border-right: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cbd {
+  border-top: 3px dashed #dddddd;
+  border-bottom: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cbd {
+  border-top: 3px dashed #dddddd;
+  border-right: 3px dashed #dddddd;
+  border-bottom: 3px dashed #dddddd;
+  border-left: 3px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cbe {
+  border-top: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cbe {
+  border-right: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cbe {
+  border-right: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cbe {
+  border-bottom: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cbe {
+  border-left: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cbe {
+  border-left: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cbe {
+  border-left: 3px dashed #646665;
+  border-right: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cbe {
+  border-top: 3px dashed #646665;
+  border-bottom: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cbe {
+  border-top: 3px dashed #646665;
+  border-right: 3px dashed #646665;
+  border-bottom: 3px dashed #646665;
+  border-left: 3px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cbf {
+  border-top: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cbf {
+  border-right: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cbf {
+  border-right: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cbf {
+  border-bottom: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cbf {
+  border-left: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cbf {
+  border-left: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cbf {
+  border-left: 3px dashed #5ec155;
+  border-right: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cbf {
+  border-top: 3px dashed #5ec155;
+  border-bottom: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cbf {
+  border-top: 3px dashed #5ec155;
+  border-right: 3px dashed #5ec155;
+  border-bottom: 3px dashed #5ec155;
+  border-left: 3px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cbg {
+  border-top: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cbg {
+  border-right: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cbg {
+  border-right: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cbg {
+  border-bottom: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cbg {
+  border-left: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cbg {
+  border-left: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cbg {
+  border-left: 3px dashed #f7f076;
+  border-right: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cbg {
+  border-top: 3px dashed #f7f076;
+  border-bottom: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cbg {
+  border-top: 3px dashed #f7f076;
+  border-right: 3px dashed #f7f076;
+  border-bottom: 3px dashed #f7f076;
+  border-left: 3px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cca {
+  border-top: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cca {
+  border-right: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cca {
+  border-right: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cca {
+  border-bottom: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cca {
+  border-left: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cca {
+  border-left: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cca {
+  border-left: 3px dotted white;
+  border-right: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cca {
+  border-top: 3px dotted white;
+  border-bottom: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cca {
+  border-top: 3px dotted white;
+  border-right: 3px dotted white;
+  border-bottom: 3px dotted white;
+  border-left: 3px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ccb {
+  border-top: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ccb {
+  border-right: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ccb {
+  border-right: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ccb {
+  border-bottom: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ccb {
+  border-left: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ccb {
+  border-left: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ccb {
+  border-left: 3px dotted black;
+  border-right: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ccb {
+  border-top: 3px dotted black;
+  border-bottom: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ccb {
+  border-top: 3px dotted black;
+  border-right: 3px dotted black;
+  border-bottom: 3px dotted black;
+  border-left: 3px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ccc {
+  border-top: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ccc {
+  border-right: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ccc {
+  border-right: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ccc {
+  border-bottom: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ccc {
+  border-left: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ccc {
+  border-left: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ccc {
+  border-left: 3px dotted #ba25ba;
+  border-right: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ccc {
+  border-top: 3px dotted #ba25ba;
+  border-bottom: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ccc {
+  border-top: 3px dotted #ba25ba;
+  border-right: 3px dotted #ba25ba;
+  border-bottom: 3px dotted #ba25ba;
+  border-left: 3px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ccd {
+  border-top: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ccd {
+  border-right: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ccd {
+  border-right: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ccd {
+  border-bottom: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ccd {
+  border-left: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ccd {
+  border-left: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ccd {
+  border-left: 3px dotted #dddddd;
+  border-right: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ccd {
+  border-top: 3px dotted #dddddd;
+  border-bottom: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ccd {
+  border-top: 3px dotted #dddddd;
+  border-right: 3px dotted #dddddd;
+  border-bottom: 3px dotted #dddddd;
+  border-left: 3px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-cce {
+  border-top: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-cce {
+  border-right: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-cce {
+  border-right: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-cce {
+  border-bottom: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-cce {
+  border-left: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-cce {
+  border-left: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-cce {
+  border-left: 3px dotted #646665;
+  border-right: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-cce {
+  border-top: 3px dotted #646665;
+  border-bottom: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-cce {
+  border-top: 3px dotted #646665;
+  border-right: 3px dotted #646665;
+  border-bottom: 3px dotted #646665;
+  border-left: 3px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ccf {
+  border-top: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ccf {
+  border-right: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ccf {
+  border-right: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ccf {
+  border-bottom: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ccf {
+  border-left: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ccf {
+  border-left: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ccf {
+  border-left: 3px dotted #5ec155;
+  border-right: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ccf {
+  border-top: 3px dotted #5ec155;
+  border-bottom: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ccf {
+  border-top: 3px dotted #5ec155;
+  border-right: 3px dotted #5ec155;
+  border-bottom: 3px dotted #5ec155;
+  border-left: 3px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ccg {
+  border-top: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ccg {
+  border-right: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ccg {
+  border-right: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ccg {
+  border-bottom: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ccg {
+  border-left: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ccg {
+  border-left: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ccg {
+  border-left: 3px dotted #f7f076;
+  border-right: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ccg {
+  border-top: 3px dotted #f7f076;
+  border-bottom: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ccg {
+  border-top: 3px dotted #f7f076;
+  border-right: 3px dotted #f7f076;
+  border-bottom: 3px dotted #f7f076;
+  border-left: 3px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-daa {
+  border-top: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-daa {
+  border-right: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-daa {
+  border-right: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-daa {
+  border-bottom: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-daa {
+  border-left: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-daa {
+  border-left: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-daa {
+  border-left: 5px solid white;
+  border-right: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-daa {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-daa {
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dab {
+  border-top: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dab {
+  border-right: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dab {
+  border-right: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dab {
+  border-bottom: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dab {
+  border-left: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dab {
+  border-left: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dab {
+  border-left: 5px solid black;
+  border-right: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dab {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dab {
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dac {
+  border-top: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dac {
+  border-right: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dac {
+  border-right: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dac {
+  border-bottom: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dac {
+  border-left: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dac {
+  border-left: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dac {
+  border-left: 5px solid #ba25ba;
+  border-right: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dac {
+  border-top: 5px solid #ba25ba;
+  border-bottom: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dac {
+  border-top: 5px solid #ba25ba;
+  border-right: 5px solid #ba25ba;
+  border-bottom: 5px solid #ba25ba;
+  border-left: 5px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dad {
+  border-top: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dad {
+  border-right: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dad {
+  border-right: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dad {
+  border-bottom: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dad {
+  border-left: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dad {
+  border-left: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dad {
+  border-left: 5px solid #dddddd;
+  border-right: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dad {
+  border-top: 5px solid #dddddd;
+  border-bottom: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dad {
+  border-top: 5px solid #dddddd;
+  border-right: 5px solid #dddddd;
+  border-bottom: 5px solid #dddddd;
+  border-left: 5px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dae {
+  border-top: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dae {
+  border-right: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dae {
+  border-right: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dae {
+  border-bottom: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dae {
+  border-left: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dae {
+  border-left: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dae {
+  border-left: 5px solid #646665;
+  border-right: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dae {
+  border-top: 5px solid #646665;
+  border-bottom: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dae {
+  border-top: 5px solid #646665;
+  border-right: 5px solid #646665;
+  border-bottom: 5px solid #646665;
+  border-left: 5px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-daf {
+  border-top: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-daf {
+  border-right: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-daf {
+  border-right: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-daf {
+  border-bottom: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-daf {
+  border-left: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-daf {
+  border-left: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-daf {
+  border-left: 5px solid #5ec155;
+  border-right: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-daf {
+  border-top: 5px solid #5ec155;
+  border-bottom: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-daf {
+  border-top: 5px solid #5ec155;
+  border-right: 5px solid #5ec155;
+  border-bottom: 5px solid #5ec155;
+  border-left: 5px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dag {
+  border-top: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dag {
+  border-right: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dag {
+  border-right: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dag {
+  border-bottom: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dag {
+  border-left: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dag {
+  border-left: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dag {
+  border-left: 5px solid #f7f076;
+  border-right: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dag {
+  border-top: 5px solid #f7f076;
+  border-bottom: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dag {
+  border-top: 5px solid #f7f076;
+  border-right: 5px solid #f7f076;
+  border-bottom: 5px solid #f7f076;
+  border-left: 5px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dba {
+  border-top: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dba {
+  border-right: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dba {
+  border-right: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dba {
+  border-bottom: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dba {
+  border-left: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dba {
+  border-left: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dba {
+  border-left: 5px dashed white;
+  border-right: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dba {
+  border-top: 5px dashed white;
+  border-bottom: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dba {
+  border-top: 5px dashed white;
+  border-right: 5px dashed white;
+  border-bottom: 5px dashed white;
+  border-left: 5px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dbb {
+  border-top: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dbb {
+  border-right: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dbb {
+  border-right: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dbb {
+  border-bottom: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dbb {
+  border-left: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dbb {
+  border-left: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dbb {
+  border-left: 5px dashed black;
+  border-right: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dbb {
+  border-top: 5px dashed black;
+  border-bottom: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dbb {
+  border-top: 5px dashed black;
+  border-right: 5px dashed black;
+  border-bottom: 5px dashed black;
+  border-left: 5px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dbc {
+  border-top: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dbc {
+  border-right: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dbc {
+  border-right: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dbc {
+  border-bottom: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dbc {
+  border-left: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dbc {
+  border-left: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dbc {
+  border-left: 5px dashed #ba25ba;
+  border-right: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dbc {
+  border-top: 5px dashed #ba25ba;
+  border-bottom: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dbc {
+  border-top: 5px dashed #ba25ba;
+  border-right: 5px dashed #ba25ba;
+  border-bottom: 5px dashed #ba25ba;
+  border-left: 5px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dbd {
+  border-top: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dbd {
+  border-right: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dbd {
+  border-right: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dbd {
+  border-bottom: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dbd {
+  border-left: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dbd {
+  border-left: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dbd {
+  border-left: 5px dashed #dddddd;
+  border-right: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dbd {
+  border-top: 5px dashed #dddddd;
+  border-bottom: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dbd {
+  border-top: 5px dashed #dddddd;
+  border-right: 5px dashed #dddddd;
+  border-bottom: 5px dashed #dddddd;
+  border-left: 5px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dbe {
+  border-top: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dbe {
+  border-right: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dbe {
+  border-right: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dbe {
+  border-bottom: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dbe {
+  border-left: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dbe {
+  border-left: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dbe {
+  border-left: 5px dashed #646665;
+  border-right: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dbe {
+  border-top: 5px dashed #646665;
+  border-bottom: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dbe {
+  border-top: 5px dashed #646665;
+  border-right: 5px dashed #646665;
+  border-bottom: 5px dashed #646665;
+  border-left: 5px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dbf {
+  border-top: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dbf {
+  border-right: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dbf {
+  border-right: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dbf {
+  border-bottom: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dbf {
+  border-left: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dbf {
+  border-left: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dbf {
+  border-left: 5px dashed #5ec155;
+  border-right: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dbf {
+  border-top: 5px dashed #5ec155;
+  border-bottom: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dbf {
+  border-top: 5px dashed #5ec155;
+  border-right: 5px dashed #5ec155;
+  border-bottom: 5px dashed #5ec155;
+  border-left: 5px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dbg {
+  border-top: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dbg {
+  border-right: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dbg {
+  border-right: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dbg {
+  border-bottom: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dbg {
+  border-left: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dbg {
+  border-left: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dbg {
+  border-left: 5px dashed #f7f076;
+  border-right: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dbg {
+  border-top: 5px dashed #f7f076;
+  border-bottom: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dbg {
+  border-top: 5px dashed #f7f076;
+  border-right: 5px dashed #f7f076;
+  border-bottom: 5px dashed #f7f076;
+  border-left: 5px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dca {
+  border-top: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dca {
+  border-right: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dca {
+  border-right: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dca {
+  border-bottom: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dca {
+  border-left: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dca {
+  border-left: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dca {
+  border-left: 5px dotted white;
+  border-right: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dca {
+  border-top: 5px dotted white;
+  border-bottom: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dca {
+  border-top: 5px dotted white;
+  border-right: 5px dotted white;
+  border-bottom: 5px dotted white;
+  border-left: 5px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dcb {
+  border-top: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dcb {
+  border-right: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dcb {
+  border-right: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dcb {
+  border-bottom: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dcb {
+  border-left: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dcb {
+  border-left: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dcb {
+  border-left: 5px dotted black;
+  border-right: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dcb {
+  border-top: 5px dotted black;
+  border-bottom: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dcb {
+  border-top: 5px dotted black;
+  border-right: 5px dotted black;
+  border-bottom: 5px dotted black;
+  border-left: 5px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dcc {
+  border-top: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dcc {
+  border-right: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dcc {
+  border-right: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dcc {
+  border-bottom: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dcc {
+  border-left: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dcc {
+  border-left: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dcc {
+  border-left: 5px dotted #ba25ba;
+  border-right: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dcc {
+  border-top: 5px dotted #ba25ba;
+  border-bottom: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dcc {
+  border-top: 5px dotted #ba25ba;
+  border-right: 5px dotted #ba25ba;
+  border-bottom: 5px dotted #ba25ba;
+  border-left: 5px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dcd {
+  border-top: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dcd {
+  border-right: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dcd {
+  border-right: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dcd {
+  border-bottom: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dcd {
+  border-left: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dcd {
+  border-left: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dcd {
+  border-left: 5px dotted #dddddd;
+  border-right: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dcd {
+  border-top: 5px dotted #dddddd;
+  border-bottom: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dcd {
+  border-top: 5px dotted #dddddd;
+  border-right: 5px dotted #dddddd;
+  border-bottom: 5px dotted #dddddd;
+  border-left: 5px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dce {
+  border-top: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dce {
+  border-right: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dce {
+  border-right: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dce {
+  border-bottom: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dce {
+  border-left: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dce {
+  border-left: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dce {
+  border-left: 5px dotted #646665;
+  border-right: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dce {
+  border-top: 5px dotted #646665;
+  border-bottom: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dce {
+  border-top: 5px dotted #646665;
+  border-right: 5px dotted #646665;
+  border-bottom: 5px dotted #646665;
+  border-left: 5px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dcf {
+  border-top: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dcf {
+  border-right: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dcf {
+  border-right: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dcf {
+  border-bottom: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dcf {
+  border-left: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dcf {
+  border-left: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dcf {
+  border-left: 5px dotted #5ec155;
+  border-right: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dcf {
+  border-top: 5px dotted #5ec155;
+  border-bottom: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dcf {
+  border-top: 5px dotted #5ec155;
+  border-right: 5px dotted #5ec155;
+  border-bottom: 5px dotted #5ec155;
+  border-left: 5px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-dcg {
+  border-top: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-dcg {
+  border-right: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-dcg {
+  border-right: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-dcg {
+  border-bottom: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-dcg {
+  border-left: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-dcg {
+  border-left: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-dcg {
+  border-left: 5px dotted #f7f076;
+  border-right: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-dcg {
+  border-top: 5px dotted #f7f076;
+  border-bottom: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-dcg {
+  border-top: 5px dotted #f7f076;
+  border-right: 5px dotted #f7f076;
+  border-bottom: 5px dotted #f7f076;
+  border-left: 5px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eaa {
+  border-top: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eaa {
+  border-right: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eaa {
+  border-right: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eaa {
+  border-bottom: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eaa {
+  border-left: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eaa {
+  border-left: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eaa {
+  border-left: 8px solid white;
+  border-right: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eaa {
+  border-top: 8px solid white;
+  border-bottom: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eaa {
+  border-top: 8px solid white;
+  border-right: 8px solid white;
+  border-bottom: 8px solid white;
+  border-left: 8px solid white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eab {
+  border-top: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eab {
+  border-right: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eab {
+  border-right: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eab {
+  border-bottom: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eab {
+  border-left: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eab {
+  border-left: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eab {
+  border-left: 8px solid black;
+  border-right: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eab {
+  border-top: 8px solid black;
+  border-bottom: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eab {
+  border-top: 8px solid black;
+  border-right: 8px solid black;
+  border-bottom: 8px solid black;
+  border-left: 8px solid black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eac {
+  border-top: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eac {
+  border-right: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eac {
+  border-right: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eac {
+  border-bottom: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eac {
+  border-left: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eac {
+  border-left: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eac {
+  border-left: 8px solid #ba25ba;
+  border-right: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eac {
+  border-top: 8px solid #ba25ba;
+  border-bottom: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eac {
+  border-top: 8px solid #ba25ba;
+  border-right: 8px solid #ba25ba;
+  border-bottom: 8px solid #ba25ba;
+  border-left: 8px solid #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ead {
+  border-top: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ead {
+  border-right: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ead {
+  border-right: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ead {
+  border-bottom: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ead {
+  border-left: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ead {
+  border-left: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ead {
+  border-left: 8px solid #dddddd;
+  border-right: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ead {
+  border-top: 8px solid #dddddd;
+  border-bottom: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ead {
+  border-top: 8px solid #dddddd;
+  border-right: 8px solid #dddddd;
+  border-bottom: 8px solid #dddddd;
+  border-left: 8px solid #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eae {
+  border-top: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eae {
+  border-right: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eae {
+  border-right: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eae {
+  border-bottom: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eae {
+  border-left: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eae {
+  border-left: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eae {
+  border-left: 8px solid #646665;
+  border-right: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eae {
+  border-top: 8px solid #646665;
+  border-bottom: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eae {
+  border-top: 8px solid #646665;
+  border-right: 8px solid #646665;
+  border-bottom: 8px solid #646665;
+  border-left: 8px solid #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eaf {
+  border-top: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eaf {
+  border-right: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eaf {
+  border-right: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eaf {
+  border-bottom: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eaf {
+  border-left: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eaf {
+  border-left: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eaf {
+  border-left: 8px solid #5ec155;
+  border-right: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eaf {
+  border-top: 8px solid #5ec155;
+  border-bottom: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eaf {
+  border-top: 8px solid #5ec155;
+  border-right: 8px solid #5ec155;
+  border-bottom: 8px solid #5ec155;
+  border-left: 8px solid #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eag {
+  border-top: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eag {
+  border-right: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eag {
+  border-right: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eag {
+  border-bottom: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eag {
+  border-left: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eag {
+  border-left: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eag {
+  border-left: 8px solid #f7f076;
+  border-right: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eag {
+  border-top: 8px solid #f7f076;
+  border-bottom: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eag {
+  border-top: 8px solid #f7f076;
+  border-right: 8px solid #f7f076;
+  border-bottom: 8px solid #f7f076;
+  border-left: 8px solid #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eba {
+  border-top: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eba {
+  border-right: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eba {
+  border-right: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eba {
+  border-bottom: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eba {
+  border-left: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eba {
+  border-left: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eba {
+  border-left: 8px dashed white;
+  border-right: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eba {
+  border-top: 8px dashed white;
+  border-bottom: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eba {
+  border-top: 8px dashed white;
+  border-right: 8px dashed white;
+  border-bottom: 8px dashed white;
+  border-left: 8px dashed white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ebb {
+  border-top: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ebb {
+  border-right: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ebb {
+  border-right: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ebb {
+  border-bottom: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ebb {
+  border-left: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ebb {
+  border-left: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ebb {
+  border-left: 8px dashed black;
+  border-right: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ebb {
+  border-top: 8px dashed black;
+  border-bottom: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ebb {
+  border-top: 8px dashed black;
+  border-right: 8px dashed black;
+  border-bottom: 8px dashed black;
+  border-left: 8px dashed black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ebc {
+  border-top: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ebc {
+  border-right: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ebc {
+  border-right: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ebc {
+  border-bottom: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ebc {
+  border-left: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ebc {
+  border-left: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ebc {
+  border-left: 8px dashed #ba25ba;
+  border-right: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ebc {
+  border-top: 8px dashed #ba25ba;
+  border-bottom: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ebc {
+  border-top: 8px dashed #ba25ba;
+  border-right: 8px dashed #ba25ba;
+  border-bottom: 8px dashed #ba25ba;
+  border-left: 8px dashed #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ebd {
+  border-top: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ebd {
+  border-right: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ebd {
+  border-right: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ebd {
+  border-bottom: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ebd {
+  border-left: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ebd {
+  border-left: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ebd {
+  border-left: 8px dashed #dddddd;
+  border-right: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ebd {
+  border-top: 8px dashed #dddddd;
+  border-bottom: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ebd {
+  border-top: 8px dashed #dddddd;
+  border-right: 8px dashed #dddddd;
+  border-bottom: 8px dashed #dddddd;
+  border-left: 8px dashed #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ebe {
+  border-top: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ebe {
+  border-right: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ebe {
+  border-right: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ebe {
+  border-bottom: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ebe {
+  border-left: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ebe {
+  border-left: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ebe {
+  border-left: 8px dashed #646665;
+  border-right: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ebe {
+  border-top: 8px dashed #646665;
+  border-bottom: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ebe {
+  border-top: 8px dashed #646665;
+  border-right: 8px dashed #646665;
+  border-bottom: 8px dashed #646665;
+  border-left: 8px dashed #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ebf {
+  border-top: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ebf {
+  border-right: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ebf {
+  border-right: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ebf {
+  border-bottom: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ebf {
+  border-left: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ebf {
+  border-left: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ebf {
+  border-left: 8px dashed #5ec155;
+  border-right: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ebf {
+  border-top: 8px dashed #5ec155;
+  border-bottom: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ebf {
+  border-top: 8px dashed #5ec155;
+  border-right: 8px dashed #5ec155;
+  border-bottom: 8px dashed #5ec155;
+  border-left: 8px dashed #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ebg {
+  border-top: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ebg {
+  border-right: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ebg {
+  border-right: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ebg {
+  border-bottom: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ebg {
+  border-left: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ebg {
+  border-left: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ebg {
+  border-left: 8px dashed #f7f076;
+  border-right: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ebg {
+  border-top: 8px dashed #f7f076;
+  border-bottom: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ebg {
+  border-top: 8px dashed #f7f076;
+  border-right: 8px dashed #f7f076;
+  border-bottom: 8px dashed #f7f076;
+  border-left: 8px dashed #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-eca {
+  border-top: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-eca {
+  border-right: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-eca {
+  border-right: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-eca {
+  border-bottom: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-eca {
+  border-left: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-eca {
+  border-left: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-eca {
+  border-left: 8px dotted white;
+  border-right: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-eca {
+  border-top: 8px dotted white;
+  border-bottom: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-eca {
+  border-top: 8px dotted white;
+  border-right: 8px dotted white;
+  border-bottom: 8px dotted white;
+  border-left: 8px dotted white; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ecb {
+  border-top: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ecb {
+  border-right: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ecb {
+  border-right: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ecb {
+  border-bottom: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ecb {
+  border-left: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ecb {
+  border-left: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ecb {
+  border-left: 8px dotted black;
+  border-right: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ecb {
+  border-top: 8px dotted black;
+  border-bottom: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ecb {
+  border-top: 8px dotted black;
+  border-right: 8px dotted black;
+  border-bottom: 8px dotted black;
+  border-left: 8px dotted black; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ecc {
+  border-top: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ecc {
+  border-right: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ecc {
+  border-right: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ecc {
+  border-bottom: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ecc {
+  border-left: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ecc {
+  border-left: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ecc {
+  border-left: 8px dotted #ba25ba;
+  border-right: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ecc {
+  border-top: 8px dotted #ba25ba;
+  border-bottom: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ecc {
+  border-top: 8px dotted #ba25ba;
+  border-right: 8px dotted #ba25ba;
+  border-bottom: 8px dotted #ba25ba;
+  border-left: 8px dotted #ba25ba; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ecd {
+  border-top: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ecd {
+  border-right: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ecd {
+  border-right: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ecd {
+  border-bottom: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ecd {
+  border-left: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ecd {
+  border-left: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ecd {
+  border-left: 8px dotted #dddddd;
+  border-right: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ecd {
+  border-top: 8px dotted #dddddd;
+  border-bottom: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ecd {
+  border-top: 8px dotted #dddddd;
+  border-right: 8px dotted #dddddd;
+  border-bottom: 8px dotted #dddddd;
+  border-left: 8px dotted #dddddd; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ece {
+  border-top: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ece {
+  border-right: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ece {
+  border-right: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ece {
+  border-bottom: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ece {
+  border-left: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ece {
+  border-left: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ece {
+  border-left: 8px dotted #646665;
+  border-right: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ece {
+  border-top: 8px dotted #646665;
+  border-bottom: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ece {
+  border-top: 8px dotted #646665;
+  border-right: 8px dotted #646665;
+  border-bottom: 8px dotted #646665;
+  border-left: 8px dotted #646665; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ecf {
+  border-top: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ecf {
+  border-right: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ecf {
+  border-right: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ecf {
+  border-bottom: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ecf {
+  border-left: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ecf {
+  border-left: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ecf {
+  border-left: 8px dotted #5ec155;
+  border-right: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ecf {
+  border-top: 8px dotted #5ec155;
+  border-bottom: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ecf {
+  border-top: 8px dotted #5ec155;
+  border-right: 8px dotted #5ec155;
+  border-bottom: 8px dotted #5ec155;
+  border-left: 8px dotted #5ec155; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bt-ecg {
+  border-top: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Br-ecg {
+  border-right: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Be-ecg {
+  border-right: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bb-ecg {
+  border-bottom: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bl-ecg {
+  border-left: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bs-ecg {
+  border-left: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bx-ecg {
+  border-left: 8px dotted #f7f076;
+  border-right: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.By-ecg {
+  border-top: 8px dotted #f7f076;
+  border-bottom: 8px dotted #f7f076; }
+
+/* Selector (Bx-aac etc.) */
+/* Properties */
+.Bbox-ecg {
+  border-top: 8px dotted #f7f076;
+  border-right: 8px dotted #f7f076;
+  border-bottom: 8px dotted #f7f076;
+  border-left: 8px dotted #f7f076; }
+
+/*
+#Borders
+
+In some countries they write from right to left so we decided to create start and end values for borders.
+The value can be changed by changing the variable in a config file that is not created yet.
+
+* Bs = left or right border depending of the direction of writing
+* Bt = border-top
+* Br = border-right
+* Bb = border-bottom
+* Bl = border-left
+* Bx = border-left and border-right
+* By = border-top and border-bottom
+
+####No border top
+
+	<div class="B-0">There is no top border in this div.</div>
+*/
+.B-0 {
+  border: none; }
+
+.Bt-xs {
+  border-top-width: 1px; }
+
+.Bt-sm {
+  border-top-width: 2px; }
+
+.Bt-md {
+  border-top-width: 3px; }
+
+.Bt-lg {
+  border-top-width: 4px; }
+
+.Bt-xl {
+  border-top-width: 5px; }
+
+.Br-xs {
+  border-right-width: 1px; }
+
+.Br-sm {
+  border-right-width: 2px; }
+
+.Br-md {
+  border-right-width: 3px; }
+
+.Br-lg {
+  border-right-width: 4px; }
+
+.Br-xl {
+  border-right-width: 5px; }
+
+.Be-xs {
+  border-right-width: 1px; }
+
+.Be-sm {
+  border-right-width: 2px; }
+
+.Be-md {
+  border-right-width: 3px; }
+
+.Be-lg {
+  border-right-width: 4px; }
+
+.Be-xl {
+  border-right-width: 5px; }
+
+.Bb-xs {
+  border-bottom-width: 1px; }
+
+.Bb-sm {
+  border-bottom-width: 2px; }
+
+.Bb-md {
+  border-bottom-width: 3px; }
+
+.Bb-lg {
+  border-bottom-width: 4px; }
+
+.Bb-xl {
+  border-bottom-width: 5px; }
+
+.Bl-xs {
+  border-left-width: 1px; }
+
+.Bl-sm {
+  border-left-width: 2px; }
+
+.Bl-md {
+  border-left-width: 3px; }
+
+.Bl-lg {
+  border-left-width: 4px; }
+
+.Bl-xl {
+  border-left-width: 5px; }
+
+.Bs-xs {
+  border-left-width: 1px; }
+
+.Bs-sm {
+  border-left-width: 2px; }
+
+.Bs-md {
+  border-left-width: 3px; }
+
+.Bs-lg {
+  border-left-width: 4px; }
+
+.Bs-xl {
+  border-left-width: 5px; }
+
+.Bx-xs {
+  border-left-width: 1px;
+  border-right-width: 1px; }
+
+.Bx-sm {
+  border-left-width: 2px;
+  border-right-width: 2px; }
+
+.Bx-md {
+  border-left-width: 3px;
+  border-right-width: 3px; }
+
+.Bx-lg {
+  border-left-width: 4px;
+  border-right-width: 4px; }
+
+.Bx-xl {
+  border-left-width: 5px;
+  border-right-width: 5px; }
+
+.By-xs {
+  border-top-width: 1px;
+  border-bottom-width: 1px; }
+
+.By-sm {
+  border-top-width: 2px;
+  border-bottom-width: 2px; }
+
+.By-md {
+  border-top-width: 3px;
+  border-bottom-width: 3px; }
+
+.By-lg {
+  border-top-width: 4px;
+  border-bottom-width: 4px; }
+
+.By-xl {
+  border-top-width: 5px;
+  border-bottom-width: 5px; }
+
+.Bbox-xs {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px; }
+
+.Bbox-sm {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px; }
+
+.Bbox-md {
+  border-top-width: 3px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px; }
+
+.Bbox-lg {
+  border-top-width: 4px;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  border-left-width: 4px; }
+
+.Bbox-xl {
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-left-width: 5px; }
+
+.Bt-solid {
+  border-top-style: solid; }
+
+.Br-solid {
+  border-right-style: solid; }
+
+.Be-solid {
+  border-right-style: solid; }
+
+.Bb-solid {
+  border-bottom-style: solid; }
+
+.Bl-solid {
+  border-left-style: solid; }
+
+.Bs-solid {
+  border-left-style: solid; }
+
+.Bx-solid {
+  border-left-style: solid;
+  border-right-style: solid; }
+
+.By-solid {
+  border-top-style: solid;
+  border-bottom-style: solid; }
+
+.Bbox-solid {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid; }
+
+.Bt-dotted {
+  border-top-style: dotted; }
+
+.Br-dotted {
+  border-right-style: dotted; }
+
+.Be-dotted {
+  border-right-style: dotted; }
+
+.Bb-dotted {
+  border-bottom-style: dotted; }
+
+.Bl-dotted {
+  border-left-style: dotted; }
+
+.Bs-dotted {
+  border-left-style: dotted; }
+
+.Bx-dotted {
+  border-left-style: dotted;
+  border-right-style: dotted; }
+
+.By-dotted {
+  border-top-style: dotted;
+  border-bottom-style: dotted; }
+
+.Bbox-dotted {
+  border-top-style: dotted;
+  border-right-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: dotted; }
+
+.Bt-dashed {
+  border-top-style: dashed; }
+
+.Br-dashed {
+  border-right-style: dashed; }
+
+.Be-dashed {
+  border-right-style: dashed; }
+
+.Bb-dashed {
+  border-bottom-style: dashed; }
+
+.Bl-dashed {
+  border-left-style: dashed; }
+
+.Bs-dashed {
+  border-left-style: dashed; }
+
+.Bx-dashed {
+  border-left-style: dashed;
+  border-right-style: dashed; }
+
+.By-dashed {
+  border-top-style: dashed;
+  border-bottom-style: dashed; }
+
+.Bbox-dashed {
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed; }
+
+.B-radius-full {
+  border-radius: 100%; }
+
+.bg-rounded-sm {
+  border-radius: 5px; }
+
+/* Bottom aligned background */
+.bg-bottom {
+  background-position: bottom; }
+
+/* Top aligned background */
+.bg-top {
+  background-position: top; }
+
+.bg-transparent {
+  background: transparent; }
+
+.bg-none {
+  background: none; }
+
+/*
+#Lists
+
+####List without styles
+
+	<ul>
+		<li>This list has no styles.</li>
+	</ul>
+*/
+.list-no-style {
+  list-style: none; }
+
+.a-width-sm {
+  transition: width 0.5s ease-in-out; }
+
+.a-accordion {
+  max-height: 0;
+  overflow: hidden; }
+
+.a-accordion-sm {
+  height: auto;
+  max-height: 2000px; }
+
+.a-accordion-md {
+  height: auto;
+  max-height: 4000px; }
+
+body {
+  font-size: 1rem; }
+
+.f-giga {
+  font-size: 4em; }
+
+.f-mega {
+  font-size: 3em; }
+
+.f-alpha {
+  font-size: 2.5em; }
+
+.f-beta {
+  font-size: 2em; }
+
+.f-gamma {
+  font-size: 1.7em; }
+
+.f-delta {
+  font-size: 1.5em; }
+
+.f-epsilon {
+  font-size: 1.2em; }
+
+.f-zeta {
+  font-size: 0.8em; }
+
+.f-blank {
+  color: #ffffff; }
+
+.f-normal {
+  font-style: normal; }
+
+.f-bold {
+  font-weight: bold; }
+
+.f-italic {
+  font-style: italic; }
+
+.f-w-normal {
+  font-weight: normal; }
+
+.f-w-700 {
+  font-weight: 700; }
+
+.f-uppercase {
+  text-transform: uppercase; }
+
+.f-line-through {
+  text-decoration: line-through; }
+
+.f-no-decoration {
+  text-decoration: none; }
+
+.f-underline {
+  text-decoration: underline; }
+
+.f-right {
+  text-align: right; }
+
+.f-left {
+  text-align: left; }
+
+.f-center {
+  text-align: center; }
+
+.f-no-wrap {
+  white-space: nowrap; }
+
+/*
+#Margins
+
+####M is an abbreviation for margin.
+
+* Mt = margin-top
+* Mr = margin-right
+* Mb = margin-bottom
+* Ml = margin-left
+
+####No margins
+
+	<div class="M-0">There are no margins in this div.</div>
+*/
+.M-0 {
+  margin: 0; }
+
+/*
+####No top margin
+
+	<div class="Mt-0">Top margin of this div is 0</div>
+*/
+.Mt-0 {
+  margin-top: 0; }
+
+/*
+#Paddings
+
+####P is an abbreviation for padding.
+
+* Pt = padding-top
+* Pr = padding-right
+* Pb = padding-bottom
+* Pl = padding-left
+
+####No paddings
+
+	<div class="P-0">There are no paddings in this div.</div>
+*/
+.P-0 {
+  padding: 0; }
+
+.Pt-xs {
+  padding-top: 0.5em; }
+
+.Pt-sm {
+  padding-top: 0.7em; }
+
+.Pt-md {
+  padding-top: 1em; }
+
+.Pt-lg {
+  padding-top: 1.5em; }
+
+.Pt-xl {
+  padding-top: 2em; }
+
+.Pr-xs {
+  padding-right: 0.5em; }
+
+.Pr-sm {
+  padding-right: 0.7em; }
+
+.Pr-md {
+  padding-right: 1em; }
+
+.Pr-lg {
+  padding-right: 1.5em; }
+
+.Pr-xl {
+  padding-right: 2em; }
+
+.Pe-xs {
+  padding-right: 0.5em; }
+
+.Pe-sm {
+  padding-right: 0.7em; }
+
+.Pe-md {
+  padding-right: 1em; }
+
+.Pe-lg {
+  padding-right: 1.5em; }
+
+.Pe-xl {
+  padding-right: 2em; }
+
+.Pb-xs {
+  padding-bottom: 0.5em; }
+
+.Pb-sm {
+  padding-bottom: 0.7em; }
+
+.Pb-md {
+  padding-bottom: 1em; }
+
+.Pb-lg {
+  padding-bottom: 1.5em; }
+
+.Pb-xl {
+  padding-bottom: 2em; }
+
+.Pl-xs {
+  padding-left: 0.5em; }
+
+.Pl-sm {
+  padding-left: 0.7em; }
+
+.Pl-md {
+  padding-left: 1em; }
+
+.Pl-lg {
+  padding-left: 1.5em; }
+
+.Pl-xl {
+  padding-left: 2em; }
+
+.Ps-xs {
+  padding-left: 0.5em; }
+
+.Ps-sm {
+  padding-left: 0.7em; }
+
+.Ps-md {
+  padding-left: 1em; }
+
+.Ps-lg {
+  padding-left: 1.5em; }
+
+.Ps-xl {
+  padding-left: 2em; }
+
+.Px-xs {
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+
+.Px-sm {
+  padding-left: 0.7em;
+  padding-right: 0.7em; }
+
+.Px-md {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.Px-lg {
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
+
+.Px-xl {
+  padding-left: 2em;
+  padding-right: 2em; }
+
+.Py-xs {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.Py-sm {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em; }
+
+.Py-md {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.Py-lg {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+
+.Py-xl {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.Pbox-xs {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em; }
+
+.Pbox-sm {
+  padding-top: 0.7em;
+  padding-right: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 0.7em; }
+
+.Pbox-md {
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em; }
+
+.Pbox-lg {
+  padding-top: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em; }
+
+.Pbox-xl {
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em; }
+
+.Mt-xs {
+  margin-top: 0.5em; }
+
+.Mt-sm {
+  margin-top: 0.7em; }
+
+.Mt-md {
+  margin-top: 1em; }
+
+.Mt-lg {
+  margin-top: 1.5em; }
+
+.Mt-xl {
+  margin-top: 2em; }
+
+.Mr-xs {
+  margin-right: 0.5em; }
+
+.Mr-sm {
+  margin-right: 0.7em; }
+
+.Mr-md {
+  margin-right: 1em; }
+
+.Mr-lg {
+  margin-right: 1.5em; }
+
+.Mr-xl {
+  margin-right: 2em; }
+
+.Me-xs {
+  margin-right: 0.5em; }
+
+.Me-sm {
+  margin-right: 0.7em; }
+
+.Me-md {
+  margin-right: 1em; }
+
+.Me-lg {
+  margin-right: 1.5em; }
+
+.Me-xl {
+  margin-right: 2em; }
+
+.Mb-xs {
+  margin-bottom: 0.5em; }
+
+.Mb-sm {
+  margin-bottom: 0.7em; }
+
+.Mb-md {
+  margin-bottom: 1em; }
+
+.Mb-lg {
+  margin-bottom: 1.5em; }
+
+.Mb-xl {
+  margin-bottom: 2em; }
+
+.Ml-xs {
+  margin-left: 0.5em; }
+
+.Ml-sm {
+  margin-left: 0.7em; }
+
+.Ml-md {
+  margin-left: 1em; }
+
+.Ml-lg {
+  margin-left: 1.5em; }
+
+.Ml-xl {
+  margin-left: 2em; }
+
+.Ms-xs {
+  margin-left: 0.5em; }
+
+.Ms-sm {
+  margin-left: 0.7em; }
+
+.Ms-md {
+  margin-left: 1em; }
+
+.Ms-lg {
+  margin-left: 1.5em; }
+
+.Ms-xl {
+  margin-left: 2em; }
+
+.Mx-xs {
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
+
+.Mx-sm {
+  margin-left: 0.7em;
+  margin-right: 0.7em; }
+
+.Mx-md {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.Mx-lg {
+  margin-left: 1.5em;
+  margin-right: 1.5em; }
+
+.Mx-xl {
+  margin-left: 2em;
+  margin-right: 2em; }
+
+.My-xs {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+.My-sm {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em; }
+
+.My-md {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.My-lg {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
+.My-xl {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.Mbox-xs {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em; }
+
+.Mbox-sm {
+  margin-top: 0.7em;
+  margin-right: 0.7em;
+  margin-bottom: 0.7em;
+  margin-left: 0.7em; }
+
+.Mbox-md {
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em; }
+
+.Mbox-lg {
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em; }
+
+.Mbox-xl {
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em; }
+
+.t-0 {
+  top: 0; }
+
+.b-0 {
+  bottom: 0; }
+
+.l-0 {
+  left: 0; }
+
+.r-0 {
+  right: 0; }
+
+.hidden {
+  display: none; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.absolute {
+  position: absolute; }
+
+.relative {
+  position: relative; }
+
+.o-hidden {
+  overflow: hidden; }
+
+.o-y-auto {
+  overflow-y: auto; }
+
+.left {
+  float: left; }
+
+@media (min-width: 320px) {
+  .r-xs-left {
+    float: left; } }
+
+@media (min-width: 640px) {
+  .r-sm-left {
+    float: left; } }
+
+@media (min-width: 1024px) {
+  .r-md-left {
+    float: left; } }
+
+@media (min-width: 1200px) {
+  .r-lg-left {
+    float: left; } }
+
+.right {
+  float: right; }
+
+@media (min-width: 320px) {
+  .r-xs-right {
+    float: right; } }
+
+@media (min-width: 640px) {
+  .r-sm-right {
+    float: right; } }
+
+@media (min-width: 1024px) {
+  .r-md-right {
+    float: right; } }
+
+@media (min-width: 1200px) {
+  .r-lg-right {
+    float: right; } }
+
+.full-width {
+  width: 100%; }
+
+.full-height {
+  height: 100%; }
+
+.fixed {
+  position: fixed; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch; }
+
+.flex-lock {
+  flex-grow: 0;
+  flex-shrink: 0; }
+
+.flex-flex {
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
+.v-align-top {
+  vertical-align: top; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/*
+Most used components that are simpler to use than Atomic CSS classes.
+ */
+/* Make blocks equal height
+
+ */
+.equal-height {
+  overflow: hidden; }
+
+.equal-height-col {
+  padding-bottom: 500em;
+  margin-bottom: -500em; }
+
+/* Vertical aligned items
+
+<div class="v-align">
+    <div class="v-align-middle"></div>
+    <div class="v-align-middle"></div>
+</div>
+
+ */
+.v-align {
+  display: table; }
+
+.v-align-middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+.v-align-top {
+  display: table-cell;
+  vertical-align: top; }
+
+.overlay-full {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+
+.h-center {
+  margin: 0 auto; }
+
+.x-center {
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+.y-center {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); }
+
+/*# sourceMappingURL=index.css.map */

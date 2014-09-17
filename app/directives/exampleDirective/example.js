@@ -1,14 +1,14 @@
-module.exports = ['$compile', 'RecipesService', function ($compile, RecipesService) {
+module.exports = ['$compile', 'ExamplesService', function ($compile, ExamplesService) {
 
     return {
         restrict: 'E',
         scope: {
-          recipe: '='
+          example: '='
         },
-        templateUrl: "./directives/recipe/recipe.html",
+        templateUrl: "./directives/exampleDirective/example.html",
         link: function(scope, element, attrs) {
-          scope.$watch('recipeId', function () {
-            console.info(scope.recipe);
+          scope.$watch('exampleId', function () {
+            console.info(scope.example);
           });
         }
     };
